@@ -1,15 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+/* ----- header ----- */
 header{
     width: 100%;
     background-color: #bddd00;
     position: relative;
-}
-
-header li{
-    list-style: none;
-}
-header a{
-    text-decoration: none;
-    color: #000;
 }
 
 .header-wrapper{
@@ -20,7 +25,6 @@ header a{
 }
 .header-company-logo{
     margin-top: 10px;
-    height: 60px;
 }
 .header-company-logo>a{
     display: block;
@@ -37,8 +41,12 @@ header a{
     margin-top: 40px;
 }
 .header-list-title {
+    color: #4b1800;
     padding: 0 20px;
     position: relative;
+}
+.header-list-title>a{
+    color: #4b1800;
 }
 .header-list-title::after{
     content: '';
@@ -51,7 +59,7 @@ header a{
     transition: all 300ms;
     background-color: #000;
 }
-.header-list-title:hover::after{
+.header-list:hover .header-list-title::after{
     width: 50%;
 }
 .header-list-title::before{
@@ -65,10 +73,9 @@ header a{
     transition: all 300ms;
     background-color: #000;
 }
-.header-list-title:hover::before{
+.header-list:hover .header-list-title::before{
     width: 50%;
 }
-
 
 .header-unordered-list.content{
     position: absolute;
@@ -89,7 +96,7 @@ header a{
     z-index: 1;
     opacity: 1;
 }
-/*  */
+
 .header-list-content{
     height: 40px;
     line-height: 40px;
@@ -116,4 +123,71 @@ header a{
     vertical-align: middle;
     margin: 0 80px;
     padding-left: 50px;
+}
+/* ----- footer -----*/
+footer{
+    width: 100%;
+    background-color: #eee;
+    padding: 20px 0;
+}
+.footer-wrapper{
+    margin: 0 auto;
+    width: 980px;
+}
+    /* footer - nav*/
+    .footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .footer-company-name{
+        width: 100%;
+        font-weight: bold;
+    }
+    .footer-nav>ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 200px;
+        width: 500px;
+        margin-left: 50px;
+    }
+    .footer-list-category{
+        padding: 10px 0;
+        
+        width: 200px;
+        border-right: 1px solid #000;
+    }
+    .footer-list-title{
+        position: relative;
+    }
+    .footer-list-title.partner,
+    .footer-list-title.enquiry{
+        margin-left: 20px;
+    }
+    .footer-list-content{
+        position: relative;
+        font-size: .9em;
+        padding: 3px;
+        margin-left: 20px;
+    }
+    .footer-list-category a::after{
+        content:'';
+        display: block;
+        height: 7px;
+        width: 7px;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        position: absolute;
+        top: 8px;
+        left: -15px;
+        transform: rotate(45deg);
+    }
+.facebook-icon{
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+}
+.copyright{
+    text-align: center;
 }

@@ -2,10 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="株式会社ジェニュインは、主に関東エリアで、システム開発、インフラ構築を承っております。">
+        <meta name="keywords" content="システム開発,インフラ構築,Java,インフラ,開発,関東">
+        <link rel="short icon" href="../images/favicon.ico">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="株式会社ジェニュインは、主に関東エリアで、システム開発、インフラ構築を承っております。">
+        <meta property="og:title" content="株式会社ジェニュイン">
+        <meta property="og:site_name" content="株式会社ジェニュイン">
         <link rel="stylesheet" href="../style/index.css">
-        <link rel="stylesheet" href="../style/header.css">
-        <link rel="stylesheet" href="../style/footer.css">
-        <link rel="stylesheet" href="../style/main_image.css">
+        <link rel="stylesheet" href="../style/common.css">
         <title>株式会社ジェニュイン</title>
     </head>
     <body>
@@ -17,7 +22,7 @@
                 <nav class="header-nav">
                     <ul class="header-unordered-list title">
                         <li class="header-list company-info">
-                            <h4 class="header-list-title">企業情報</h4>
+                            <p class="header-list-title">企業情報</p>
                             <ul class="header-unordered-list content company-info">
                                 <li class="header-list-content">
                                     <a href="">会社概要</a>
@@ -28,14 +33,14 @@
                             </ul>
                         </li>
                         <li class="header-list bussiness">
-                            <h4 class="header-list-title">事業内容</h4>
+                            <p class="header-list-title">事業内容</p>
                             <ul class="header-unordered-list content bussiness">
                                 <li class="header-list-content"><a href="">システム</a></li>
                                 <li class="header-list-content"><a href="">インフラ</a></li>
                             </ul>
                         </li>
                         <li class="header-list recruitment">
-                            <h4 class="header-list-title">採用情報</h4>
+                            <p class="header-list-title">採用情報</p>
                             <ul class="header-unordered-list content recruitment">
                                 <li class="header-list-content">
                                     <a href="">中途採用</a>
@@ -44,24 +49,26 @@
                             </ul>
                         </li>
                         <li class="header-list bussiness-partner">
-                            <h4 class="header-list-title">
+                            <p class="header-list-title">
                                 <a href="">パートナー募集</a>
-                            </h4>
+                            </p>
                         </li>
                         <li class="header-list enquiry">
-                            <h4 class="header-list-title">
+                            <p class="header-list-title">
                                 <a href="">お問い合わせ</a>
-                            </h4>
+                            </p>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <picture class="main-image">
-            <source srcset="../images/main_image1.png" media="(min-width: 0px)">
-            <img src="../images/main_image1.png alt="main image>
-        </picture>
         <main>
+            <div class="main-image-wrapper">
+                <picture class="main-image">
+                    <source srcset="../images/main_image1.png" media="(min-width: 0px)">
+                    <img src="../images/main_image1.png" alt="main image">
+                </picture>
+            </div>
             <div class="main-wrapper">
                 <div class="content-wrapper">
                     <p class="company-comment">
@@ -72,7 +79,7 @@
             </div>
             <div class="main-wrapper news-and-section">
                 <div class="content-wrapper news-and-section">
-                    <div class="news-content">
+                    <article class="news-content">
                         <h2>NEWS</h2>
                         <ul>
                             <li class="news-list">
@@ -101,8 +108,8 @@
                                     <p class="news-summary">事業拡大のため、本社を千代田区九段北に移転</p>
                                 </li>
                         </ul>
-                    </div>
-                    <div class="company-section">
+                    </article>
+                    <article class="company-section">
                         <p class="system-develop">
                             <a href="">
                                 <img src="../images/system_icon.png" class="system-develop">
@@ -115,12 +122,12 @@
                                 インフラ構築
                             </a>
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="main-wrapper">
                 <div class="content-wrapper dispatch-of-information">
-                    <div class="technical-information social-segment">
+                    <article class="technical-information social-segment">
                         <h2 class="social-title">
                             <a href="">Technical Information</a>
                         </h2>
@@ -146,48 +153,53 @@
                                     <p class="qiita link"><a href="">gRPC - Protocol Buffers データ型 メモ</a></p>
                                 </div>
                         </div>
-                    </div>
-                    <div class="facebook social-segment">
+                    </article>
+                    <article class="facebook social-segment">
                         <h2 class="social-title">Facebook</h2>
                         <div class="social-content facebook">
                         <!-- Facebook area-->
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </main>
         <footer>
             <div class="footer-wrapper">
-                <h4 class="footer-company-name"><a href="">Genuine</a></h4>
-                <nav class="footer-menu">
+                <nav class="footer-nav">
+                    <p class="footer-company-name">
+                        <a href="">Genuine</a>
+                    </p>
                     <ul>
-                        <li class="footer-list-category"><h5 class="footer-list-title">企業情報</h5>
+                        <li class="footer-list-category">
+                            <p class="footer-list-title">企業情報</p>
                             <ul>
                                 <li class="footer-list-content"><a href="">会社概要</a></li>
                                 <li class="footer-list-content"><a href="">社員紹介</a></li>
                             </ul>
                         </li>
-                        <li class="footer-list-category"><h5 class="footer-list-title">事業内容</h5>
+                        <li class="footer-list-category">
+                            <p class="footer-list-title">事業内容</p>
                             <ul>
                                 <li class="footer-list-content"><a href="">システム開発</a></li>
                                 <li class="footer-list-content"><a href="">インフラ構築</a></li>
                             </ul>
                         </li>
-                        <li class="footer-list-category"><h5 class="footer-list-title">採用情報</h5>
+                        <li class="footer-list-category">
+                            <p class="footer-list-title">採用情報</p>
                             <ul>
                                 <li class="footer-list-content"><a href="">中途採用</a></li>
                                 <li class="footer-list-content"><a href="">新卒採用</a></li>
                             </ul>
                         </li>
-                        <li class="footer-list-title footer-list-category">
-                            <h5 class="footer-list-title">
+                        <li class="footer-list-category">
+                            <p class="footer-list-title partner">
                                 <a href="">パートナー募集</a>
-                            </h5>
+                            </p>
                         </li>
-                        <li class="footer-list-title footer-list-category">
-                            <h5 class="footer-list-title">
+                        <li class="footer-list-category">
+                            <p class="footer-list-title enquiry">
                                 <a href="">お問い合わせ</a>
-                            </h5>
+                            </p>
                         </li>
                     </ul>
                     <div class="facebook-icon">
